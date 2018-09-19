@@ -39,7 +39,7 @@
 							</h1>
 						</div>
 						
-						<h5>Build WeChat mini programs with VueJS</h5>
+						<h5>WeChat mini programs with VueJS</h5>
 						<div class="subtitle__blue">John Roberts | @omg_damacha</div>
 						<p class="slide-footer">9/19/2018</p>
 					</section>
@@ -170,22 +170,79 @@
 						<div class="code-flexbox">
 							<div>
 								<p class="">Cross-platform webpack</p>
-								<img data-src="../lib/images/mpvue-cross-dir-wth-notes.png" alt="" class="code-screencap__big" />
+								<img data-src="../lib/images/mpvue-cross-webpack.png" alt="" class="code-screencap__big" />
 							</div>
 						</div>
 					</section>
 					<section class="content-slide" data-state="showHeader" data-header="cross-platform">
-						<p class="">Jianbing Map</p>
+						<p class="">Jianbing Map - web</p>
 						<div class="code-flexbox">
 							<div>
-								<img data-src="../lib/images/mpvue-cross-dir-wth-notes.png" alt="" class="code-screencap__big" />
-							</div>
-							<div>
-								<img data-src="../lib/images/mpvue-cross-dir-wth-notes.png" alt="" class="code-screencap__big" />
+								<img data-src="../lib/images/mpvue-web.png" alt="" class="code-screencap__big" />
 							</div>
 						</div>
 					</section>
-
+					<section class="content-slide" data-state="showHeader" data-header="cross-platform">
+						<p class="">Jianbing Map - Mini Program</p>
+						<div class="code-flexbox">
+							<div>
+								<img data-src="../lib/images/mpvue-mp.png" alt="" class="code-screencap__big" />
+							</div>
+						</div>
+					</section>
+					<section class="content-slide" data-state="showHeader" data-header="cross-platform">
+						<p class="">Jianbing Map - source code</p>
+						<div class="code-flexbox">
+							<div>
+								<a href="https://github.com/johncalvinroberts/jianbing-map" target="_blank">https://github.com/johncalvinroberts/jianbing-map</a>
+							</div>
+						</div>
+					</section>
+				</section>
+				<section id="pitfalls">
+					<section>
+						<h1 class="gradient-header__header">Common pitfalls
+							<h1 class="gradient-header__gradient">Common pitfalls</h1>
+						</h1>
+					</section>
+					<section class="content-slide" data-state="showHeader" data-header="pitfalls">
+						<h5>mpVue Funkiness</h5>
+						<ul class="fragment">
+							<li>No global Vue instance, but can have global state</li>
+							<li class="fragment">v-show directive conflicts with CSS <span class="code-span">display</span> property</li>
+							<li class="fragment">Page A -> Page A -> Back -> the two pages share a <span class="code-span">data</span> object </li>
+							<li class="fragment"><span class="code-span">slot</span> component: don't even think about it.</li>
+						</ul>
+					</section>
+					<section class="content-slide" data-state="showHeader" data-header="pitfalls">
+						<h5>Cross-platform vueJS issues</h5>
+						<ul class="fragment">
+							<li>"Mini-program-first" approach to development</li>
+							<li class="fragment">Can't use any dom-only packages (i.e., axios needs to swap with <a href="https://github.com/wendux/fly">Fly</a>)</li>
+							<li class="fragment"><span class="code-span">process.env.TARGET === 'mp'</span> <- your app code and build is littered with this line</li>
+							<li class="fragment">Other weirdness</li>
+						</ul>
+					</section>
+					<!-- <section class="content-slide" data-state="showHeader" data-header="pitfalls">
+						<h5>happy coding :)</h5>
+					</section> -->
+				</section>
+				<section id="ending">
+					<h1 class="gradient-header__header">happy coding
+						<h1 class="gradient-header__gradient">happy coding
+						</h1>
+					</h1>
+					<p>Slides available at <a href="https://mpvue.johnny.sh">mpvue.johnny.sh</a></p>
+					<div class="code-flexbox">
+						<div>
+							<img data-src="../lib/images/qrcode.png" alt="" class="qrcode">
+							<div class="subtitle__small">my wechat</div>
+						</div>
+						<div>
+							<img data-src="../lib/images/yumi-qrcode.png" alt="" class="qrcode">
+							<div class="subtitle__small"><a href="https://yu-mi.us" target="_blank">https://yu-mi.us</a></div>
+						</div>
+					</div>
 				</section>
 			</div>
 		</div>
