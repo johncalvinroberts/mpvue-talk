@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>On Wepy</title>
+		<title>mpVue</title>
 
 		<link type="text/css" href="css/reveal.css" rel="stylesheet">
 		<link type="text/css" href="css/theme/carbon.css" rel="preload" as="style" onload="this.rel='stylesheet'">
@@ -28,30 +28,35 @@
 			<div class="slides">
 				<section id="intro-overview">
 					<section>
-						<h1 class="gradient-header__header">ON WEPY <i class="icon-wechat"></i>
-							<h1 class="gradient-header__gradient">ON WEPY <i class="icon-wechat"></i></h1>
+						<h1 class="gradient-header__header">mpVue
+							<h1 class="gradient-header__gradient">mpVue</h1>
 						</h1>
-						<h5>A modern, painless workflow for building WeChat Mini Programs</h5>
+						<div class="vue-logo">
+							<i class="icon-vue"></i>
+							<h1 class="gradient-header__header">
+								<!-- <i class="icon-vue__white"></i> -->
+								<h1 class="gradient-header__gradient"></h1>
+							</h1>
+						</div>
+						
+						<h5>Build WeChat mini programs with VueJS</h5>
 						<div class="subtitle__blue">John Roberts | @omg_damacha</div>
-						<p class="slide-footer">5/22/2018</p>
+						<p class="slide-footer">9/19/2018</p>
 					</section>
 					<section class="content-slide" data-state="showHeader" data-header="overview">
-						<h5>wtf is WePY?</h5>
+						<h5>What is mpVue?</h5>
 						<ul class="fragment">
-							<li>A component-based framework for building WeChat mini programs</li>
-							<!-- <li class="fragment">Optimizations on the existing MP framework, such as Promises, Async Functions, etc.</li> -->
-							<li class="fragment">Official support from Tencent</li>
-							<li class="fragment"><a href="https://github.com/Tencent/wepy" target="_blank">https://github.com/Tencent/wepy</a></li>
+							<li>Turn your VueJS code into a WeChat mini program</li>
+							<li class="fragment">Developed open source by Meituan-Dianping</li>
+							<li class="fragment"><a href="https://github.com/Meituan-Dianping/mpvue" target="_blank">https://github.com/Meituan-Dianping/mpvue</a></li>
 						</ul>
 					</section>
 					<section class="content-slide" data-state="showHeader" data-header="overview">
-						<h5>why would I use WePY?</h5>
+						<h5>why would I use mpVue?</h5>
 						<ul class="fragment">
-							<li><i class="icon-component2"></i>Robust component system</li>
+							<li><i class="icon-component2"></i>Vue Components</li>
 							<li class="fragment"><i class="icon-javascript"></i>Write modern javascript</li>
-							<li class="fragment"><i class="icon-node"></i>Utilize Node JS</li>
-							<li class="fragment"><i class="icon-source"></i>Leverage open source</li>
-							<li class="fragment"><i class="icon-code2"></i>Write better code</li>
+							<li class="fragment"><i class="icon-happy"></i>Write cross-platform code</li>
 						</ul>
 					</section>
 					<section class="content-slide" data-state="showHeader" data-header="overview">
@@ -61,8 +66,8 @@
 								<img data-src="../lib/images/basic_original.png" alt="" class="code-screencap"/>
 							</div>
 							<div>
-								<p class="align-left">WePY</p>
-								<img data-src="../lib/images/basic_wepy.png" alt="" class="code-screencap"/>
+								<p class="align-left">mpVue</p>
+								<img data-src="../lib/images/basic_vue.png" alt="" class="code-screencap"/>
 							</div>
 						</div>
 					</section>
@@ -70,185 +75,117 @@
 						<div class="code-flexbox">
 							<div>
 								<p class="align-left">Single file component</p>
-								<img data-src="../lib/images/wepy-single-file-component.png" alt="" class="code-screencap__big" />
+								<img data-src="../lib/images/vue-single-file-component.png" alt="" class="code-screencap__big" />
 							</div>
 						</div>
 					</section>
 				</section>
-				<section id="components">
+				<section id="usage">
 					<section>
-						<h1 class="gradient-header__header">Robust component system<i class="icon-component2"></i>
-							<h1 class="gradient-header__gradient">Robust component system
-							<i class="icon-component2"></i></h1>
+						<h1 class="gradient-header__header">How?
+							<h1 class="gradient-header__gradient">How?</h1>
 						</h1>
 					</section>
-					<section class="content-slide" data-state="showHeader" data-header="components">
-						<h5>Wepy components are composable</h5>
+					<section class="content-slide" data-state="showHeader" data-header="usage">
+						<h5>How does mpVue work?</h5>
 						<ul class="fragment">
-							<li>Nested components</li>
-							<li class="fragment">Extendable</li>
-							<li class="fragment">Named slots</li>
-							<li class="fragment">Component props</li>
+							<li>vue-cli 3.0</li>
+							<li class="fragment">Webpack</li>
+							<li class="fragment">Babel</li>
+							<li class="fragment">Postcss</li>
 						</ul>
 					</section>
-					<section class="content-slide" data-state="showHeader" data-header="components">
+					<section class="content-slide" data-state="showHeader" data-header="usage">
 						<div class="code-flexbox">
 							<div>
-								<p class="">Example: Modal</p>
-								<img data-src="../lib/images/modal.png" alt="" class="code-screencap__big" />								
-								<img data-src="../lib/images/modal2.png" alt="" class="code-screencap__big" />
+								<p class="">Quickstart</p>
+								<img data-src="../lib/images/quickstart.png" alt="" class="code-screencap__big" />
 							</div>
 						</div>
 					</section>
-					<section class="content-slide" data-state="showHeader" data-header="components">
+					<section class="content-slide" data-state="showHeader" data-header="usage">
 						<div class="code-flexbox">
 							<div>
-								<p class="">Modal component</p>
-								<img data-src="../lib/images/modal-code.png" alt="" class="code-screencap__big" />
+								<p class="">Folder structure</p>
+									<img data-src="../lib/images/mpvue-dir.png" alt="" class="code-screencap__big" />
 							</div>
 						</div>
 					</section>
-					<section class="content-slide" data-state="showHeader" data-header="components">
+					<section class="content-slide" data-state="showHeader" data-header="usage">
 						<div class="code-flexbox">
 							<div>
-								<p class="">Error modal component</p>
-								<img data-src="../lib/images/error-modal-code.png" alt="" class="code-screencap__big" />
+								<p class="">Folder structure</p>
+								<img data-src="../lib/images/mpvue-dir-with-notes.png" alt="" class="code-screencap__big" />
 							</div>
 						</div>
 					</section>
-					<section class="content-slide" data-state="showHeader" data-header="components">
+					<section class="content-slide" data-state="showHeader" data-header="usage">
 						<div class="code-flexbox">
 							<div>
-								<p class="">Component composition</p>
-								<img data-src="../lib/images/modal-composition.png" alt="" class="code-screencap__big" />
+								<p class="">Source code to Mini Program code</p>
+								<img data-src="../lib/images/mpvue-dev-flow.png" alt="" class="code-screencap__big" />
 							</div>
+						</div>
+					</section>
+					<section class="content-slide" data-state="showHeader" data-header="usage">
+						<div class="code-flexbox">
+							<h1>You can start coding now :)</h1>
+						</div>
+					</section>
+					<section class="content-slide" data-state="showHeader" data-header="usage">
+						<div class="">
+							<h5>Webpack?</h5>
+							<h3 class="fragment">Can we make this source code compile to a web project?</h3>
+						</div>
+					</section>
+					<section class="content-slide" data-state="showHeader" data-header="usage">
+						<div class="">
+							<h2>Yes actually we can</h2>
 						</div>
 					</section>
 				</section>
-				<section id="modern-javascript">
+				<section id="cross-platform">
 					<section>
-						<h1 class="gradient-header__header">Write Modern Javascript
-							<i class="icon-javascript"></i>
-							<h1 class="gradient-header__gradient">Write Modern Javascript
-								<i class="icon-javascript"></i>
-							</h1>
+						<h1 class="gradient-header__header">Cross-platform VueJS
+							<h1 class="gradient-header__gradient">Cross-platform VueJS</h1>
 						</h1>
 					</section>
-					<section class="content-slide" data-state="showHeader" data-header="modern">
-						<h5>The power of babel</h5>
-						<ul class="fragment">
-							<li>WTF is babel?</li>
-							<li class="fragment">WePY + babel + es2015 = <i class="icon-happy"></i></li>
-							<li class="fragment">Entire WX api is wrapped in promise</li>
-							<li class="fragment">Write javascript how you like to write javascript</li>
-						</ul>
-					</section>
-					<section class="content-slide" data-state="showHeader" data-header="modern">
+					<section class="content-slide" data-state="showHeader" data-header="cross-platform">
 						<div class="code-flexbox">
 							<div>
-								<p class="">Async/await & Promise.all</p>
-								<img data-src="../lib/images/promise-all-example.png" alt="" class="code-screencap__big" />
+								<p class="">Cross-platform folder structure</p>
+								<img data-src="../lib/images/mpvue-cross-dir.png" alt="" class="code-screencap__big" />
 							</div>
 						</div>
 					</section>
-				</section>
-				<section id="nodejs">
-					<section>
-						<h1 class="gradient-header__header">Node JS
-							<i class="icon-node"></i>
-							<h1 class="gradient-header__gradient">Node JS
-								<i class="icon-node"></i>
-							</h1>
-						</h1>
-					</section>
-					<section class="content-slide" data-state="showHeader" data-header="node">
-						<h5>WePY's Node JS build system</h5>
-						<ul class="fragment">
-							<li>Babel & typescript</li>
-							<li class="fragment">CSS preprocessors (SASS, Post-css, less, stylus, etc.)</li>
-							<li class="fragment">Html templating (pug)</li>
-							<li class="fragment">Node environment variables</li>
-							<li class="fragment">NPM commands</li>
-						</ul>
-					</section>
-					<section class="content-slide" data-state="showHeader" data-header="node">
+					<section class="content-slide" data-state="showHeader" data-header="cross-platform">
 						<div class="code-flexbox">
 							<div>
-								<p class="">Using node environment variables</p>
-								<img data-src="../lib/images/http-config.png" alt="" class="code-screencap__auto" />
+								<p class="">Cross-platform folder structure</p>
+								<img data-src="../lib/images/mpvue-cross-dir-wth-notes.png" alt="" class="code-screencap__big" />
 							</div>
 						</div>
 					</section>
-				</section>
-				<section id="opensource">
-					<section>
-						<h1 class="gradient-header__header">Leverage Open Source
-							<i class="icon-source"></i>
-							<h1 class="gradient-header__gradient">Leverage Open Source
-								<i class="icon-source"></i>
-							</h1>
-						</h1>
-					</section>
-					<section class="content-slide" data-state="showHeader" data-header="open source">
-						<h5>WePY loves Open Source</h5>
-						<ul class="fragment">
-							<li>Familiar NPM workflow that developers already know</li>
-							<li class="fragment">Active, gigantic community on GitHub & in WeChat groups</li>
-							<li class="fragment">Open source components</li>
-						</ul>
-					</section>
-					<section class="content-slide" data-state="showHeader" data-header="open source">
+					<section class="content-slide" data-state="showHeader" data-header="cross-platform">
 						<div class="code-flexbox">
 							<div>
-								<pre><code>npm install wepy-com-paper-drawer --save</code></pre>
-								<img data-src="../lib/images/left-drawer.gif" alt="" class="code-screencap__auto" />
+								<p class="">Cross-platform webpack</p>
+								<img data-src="../lib/images/mpvue-cross-dir-wth-notes.png" alt="" class="code-screencap__big" />
 							</div>
 						</div>
 					</section>
-					<section class="content-slide" data-state="showHeader" data-header="open source">
+					<section class="content-slide" data-state="showHeader" data-header="cross-platform">
+						<p class="">Jianbing Map</p>
 						<div class="code-flexbox">
 							<div>
-								<pre><code>npm install wepy-com-paper-flash --save</code></pre>
-								<img data-src="../lib/images/flash.gif" alt="" class="code-screencap__auto" />
+								<img data-src="../lib/images/mpvue-cross-dir-wth-notes.png" alt="" class="code-screencap__big" />
+							</div>
+							<div>
+								<img data-src="../lib/images/mpvue-cross-dir-wth-notes.png" alt="" class="code-screencap__big" />
 							</div>
 						</div>
 					</section>
-				</section>
-				<section id="bettercode">
-					<section>
-						<h1 class="gradient-header__header">Write better code
-							<i class="icon-code2"></i>
-							<h1 class="gradient-header__gradient">Write better code
-								<i class="icon-code2"></i>
-							</h1>
-						</h1>
-					</section>
-					<section class="content-slide" data-state="showHeader" data-header="better code">
-						<h5>WePY leads to better code</h5>
-						<ul class="fragment">
-							<li>Code reusability, DRY-ness</li>
-							<li class="fragment">Code maintainability: cut down on spaghetti code</li>
-							<li class="fragment">Performance: ImageMin, uglify, autoprefixer, etc.</li>
-							<li class="fragment">happiness => productivity => better product</li>
-						</ul>
-					</section>
-				</section>
-				<section id="ending">
-						<h1 class="gradient-header__header">THE END
-							<h1 class="gradient-header__gradient">THE END
-							</h1>
-						</h1>
-						<p>Slides available at <a href="https://wepy.johnny.sh">wepy.johnny.sh</a></p>
-						<div class="code-flexbox">
-							<div>
-								<img data-src="../lib/images/qrcode.png" alt="" class="qrcode">
-								<div class="subtitle__small">my wechat</div>
-							</div>
-							<div>
-								<img data-src="../lib/images/yumi-qrcode.png" alt="" class="qrcode">
-								<div class="subtitle__small"><a href="https://yu-mi.us" target="_blank">https://yu-mi.us</a></div>
-							</div>
-						</div>
+
 				</section>
 			</div>
 		</div>

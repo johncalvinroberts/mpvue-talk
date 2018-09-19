@@ -47,3 +47,23 @@
 
 .icon-wechat:before {
   content: "\e909"; }
+
+.icon-vue, .icon-vue__white {
+  background-image: url('https://bucket.yu-mi.us/icons/vue_normal.svg');
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;  
+}
+
+div.vue-logo {
+  width: 100px!important;
+  margin: 0 auto!important;
+  position: relative;
+}
+
+.icon-vue__white {
+  background-image: url('https://bucket.yu-mi.us/icons/vue_white.svg');
+}

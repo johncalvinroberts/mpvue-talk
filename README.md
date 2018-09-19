@@ -1,5 +1,5 @@
-# WePY TALK
 
-A presentation about wechat Mini Program Framework WePY  
+# mpVue TALK
+A presentation about building WeChat mini programs with vueJS.
 
-You can view it online at [wepy.johnny.sh](https://wepy.johnny.sh/)
+You can view it online at [mpvue.johnny.sh](https://mpvue.johnny.sh/)

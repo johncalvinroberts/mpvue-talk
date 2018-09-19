@@ -19,7 +19,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   color: #222; }
 
 .reveal .controls .navigate-right, .reveal .controls .navigate-left, .reveal .controls .navigate-down, .reveal .controls .navigate-up {
-  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); }
+  background-image: linear-gradient(to right, #84fab0 0%, #84fab0 100%); }
   .reveal .controls .navigate-right .controls-arrow:before, .reveal .controls .navigate-right .controls-arrow:after, .reveal .controls .navigate-left .controls-arrow:before, .reveal .controls .navigate-left .controls-arrow:after, .reveal .controls .navigate-down .controls-arrow:before, .reveal .controls .navigate-down .controls-arrow:after, .reveal .controls .navigate-up .controls-arrow:before, .reveal .controls .navigate-up .controls-arrow:after {
     width: 2em;
     border-radius: 0;
@@ -31,7 +31,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 h1.gradient-header__header {
   font-weight: 900 !important;
-  text-shadow: 2px 2px linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  text-shadow: 2px 2px linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   position: relative;
   color: #fff;
   display: inline-block;
@@ -39,7 +39,9 @@ h1.gradient-header__header {
   margin: 0 auto !important; }
 
 h1.gradient-header__gradient {
-  background: -webkit-linear-gradient(#6a11cb, #2575fc);
+  background: -webkit-linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
   -webkit-background-clip: text;
   font-weight: 900 !important;
   -webkit-text-fill-color: transparent;
@@ -59,7 +61,7 @@ h1.gradient-header__gradient {
   animation-timing-function: ease-in-out; }
 
 .subtitle__blue {
-  color: #2575fc !important;
+  color: #8fd3f4 !important;
   font-size: 1em !important;
   font-weight: 400 !important; }
 
@@ -74,11 +76,11 @@ h1.gradient-header__gradient {
 .custom-header {
   position: fixed;
   top: 20px;
-  color: #F5F5F5;
+  color: #181619;
   font-size: 1.6rem !important;
   font-weight: 300 !important;
   padding: 2px 4px !important;
-  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  background-image: linear-gradient(to right, #84fab0 0%, #84fab0 100%);
   opacity: 0;
   transition: all 0.3s ease-in-out; }
 
@@ -123,8 +125,8 @@ h1.gradient-header__gradient {
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #222;
-  background-color: #222; }
+  background: #181619;
+  background-color: #181619; }
 
 .reveal {
   font-family: "Objective", Helvetica, sans-serif;
@@ -146,7 +148,7 @@ body {
 .reveal .slides > section > section {
   line-height: 1.3;
   font-weight: inherit; }
-
+/* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
 /*********************************************
  * HEADERS
  *********************************************/
@@ -319,7 +321,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #2575fc;
+  color: #8fd3f4;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -354,21 +356,21 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #2575fc;
+  border-color: #8fd3f4;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #2575fc; }
+  color: #8fd3f4; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #2575fc; }
+  color: #8fd3f4; }
 
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
